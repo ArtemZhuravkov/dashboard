@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <img
+        src="./assets/dashboard_icon.png"
+        class="dashboard__logo-img--mobile"
+        alt="Dashboard Icon"
+      />
+      <!-- Sidebar -->
+      <aside class="dashboard__sidebar">
+        <button class="dashboard__close-btn" aria-label="Close Sidebar">
+          &times;
+        </button>
+        <div class="dashboard__logo">
+          <img
+            src="./assets/dashboard_icon.png"
+            class="dashboard__logo-img"
+            alt="Dashboard Icon"
+          />
+          <div class="dashboard__logo-text-wrapper">
+            <h1 class="dashboard__logo-text">Dashboard</h1>
+            <span class="dashboard__version">v0.1</span>
+          </div>
+        </div>
+        <nav class="dashboard__nav">
+          <ul class="dashboard__nav-list">
+            <li class="dashboard__nav-item">
+              <a href="#" class="dashboard__nav-link">
+                <img
+                  src="./assets/key-square.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Dashboard
+              </a>
+            </li>
+            <li class="dashboard__nav-item">
+              <a href="#" class="dashboard__nav-link">
+                <img
+                  src="./assets/3d-square.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Product
+                <img
+                  src="./assets/chevron-right.svg"
+                  alt="Arrow right icon"
+                  class="dashboard__nav-chevron-icon"
+                />
+              </a>
+            </li>
+            <li class="dashboard__nav-item">
+              <a
+                href="#"
+                class="dashboard__nav-link dashboard__nav-link--active"
+              >
+                <img
+                  src="./assets/user-square.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Customers
+                <img
+                  src="./assets/chevron-right-active.svg"
+                  alt="Arrow right icon"
+                  class="dashboard__nav-chevron-icon"
+                />
+              </a>
+            </li>
+            <li class="dashboard__nav-item">
+              <a href="#" class="dashboard__nav-link">
+                <img
+                  src="./assets/wallet-money.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Income
+                <img
+                  src="./assets/chevron-right.svg"
+                  alt="Arrow right icon"
+                  class="dashboard__nav-chevron-icon"
+                />
+              </a>
+            </li>
+            <li class="dashboard__nav-item">
+              <a href="#" class="dashboard__nav-link">
+                <img
+                  src="./assets/discount-shape.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Promote
+                <img
+                  src="./assets/chevron-right.svg"
+                  alt="Arrow right icon"
+                  class="dashboard__nav-chevron-icon"
+                />
+              </a>
+            </li>
+            <li class="dashboard__nav-item">
+              <a href="#" class="dashboard__nav-link">
+                <img
+                  src="./assets/message-question.png"
+                  class="dashboard__nav-icon"
+                  alt=""
+                />
+                Help
+                <img
+                  src="./assets/chevron-right.svg"
+                  alt="Arrow right icon"
+                  class="dashboard__nav-chevron-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="dashboard__profile">
+          <img
+            class="dashboard__profile-pic"
+            src="/assets/user_avatar.png"
+            alt="Evano"
+          />
+          <div class="dashboard__profile-info">
+            <p class="dashboard__profile-name">Evano</p>
+            <p class="dashboard__profile-role">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard__main">
+        <header class="dashboard__header">
+          <h2 class="dashboard__greeting">Hello Evano 👋</h2>
+        </header>
+        <section class="dashboard__content">
+          <div class="dashboard__content-wrapper">
+            <div class="dashboard__content-title-wrapper">
+              <h3 class="dashboard__content-title">All Customers</h3>
+              <p class="dashboard__content-subtitle">Active Members</p>
+            </div>
+            <div class="dashboard__content-search-wrapper">
+              <img
+                src="./assets/search.png"
+                alt="Search glass icon"
+                class="dashboard__content-search-icon"
+              />
+              <input
+                type="text"
+                class="dashboard__content-search-input"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <table class="dashboard__table">
+            <thead class="dashboard__table-head">
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="dashboard__table-body">
+              <tr>
+                <td data-label="Customer Name">Jane Cooper</td>
+                <td data-label="Company">Microsoft</td>
+                <td data-label="Phone Number">(225) 555-0118</td>
+                <td data-label="Email">jane@microsoft.com</td>
+                <td data-label="Country">United States</td>
+                <td data-label="Status" class="dashboard__status">
+                  <div class="dashboard__status--active">
+                    <span>Active</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Floyd Miles</td>
+                <td data-label="Company">Yahoo</td>
+                <td data-label="Phone Number">(205) 555-0100</td>
+                <td data-label="Email">floyd@yahoo.com</td>
+                <td data-label="Country">Kiribati</td>
+                <td data-label="Status" class="dashboard__status">
+                  <div class="dashboard__status--inactive">
+                    Inactive
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Customer Name">Ronald Richards</td>
+                <td data-label="Company">Adobe</td>
+                <td data-label="Phone Number">(302) 55-0107</td>
+                <td data-label="Email">ronald@adobe.com</td>
+                <td data-label="Country">Israel</td>
+                <td data-label="Status" class="dashboard__status">
+                  <div class="dashboard__status--inactive">
+                    Inactive
+                  </div>
+                </td>
+              </tr>
+              <!-- Additional rows here -->
+            </tbody>
+          </table>
+          <div class="dashboard__pagination-wrapper">
+            <p class="dashboard__pagination-label">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <nav class="pagination">
+              <button class="pagination__arrow" aria-label="Previous page">
+                &lt;
+              </button>
+              <button class="pagination__number pagination__number--active">
+                1
+              </button>
+              <button class="pagination__number">2</button>
+              <button class="pagination__number">3</button>
+              <button class="pagination__number">4</button>
+              <span class="pagination__dots">...</span>
+              <button class="pagination__number">40</button>
+              <button class="pagination__arrow" aria-label="Next page">
+                &gt;
+              </button>
+            </nav>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
